@@ -437,18 +437,6 @@ def main(args):
         fast_thinking_llm_proc.terminate()
         fast_thinking_llm_proc.join()
 
-    # instance_name = Path(args.instance_path).stem
-
-    # df = dump_global_obj_queue(track_global_obj_queue,
-    #                         f'/local/scratch/a/yin195/vllm-carbon-monitoring/LLM-TSP-async/experiments/LLM_TSP_exp/{instance_name}_max_nodes_{args.max_node_for_solver}_time_budget_{args.total_time_budget}_initial_{args.initial_solution_model}_llm_{args.fast_llm_model}_{args.reasoning_llm_model}_solver_{args.solver_model}_subproblem_{args.llm_subproblem_selection}_parallel_workers.csv')
-    # print("Saved", len(df), "records")
-
-    # fast_llm_proc.join()
-    # dynamic_solver_proc.join()
-    
-    # # reasoning_llm_proc.join()
-    # print('complete')
-
 
 if __name__ == "__main__":
     
